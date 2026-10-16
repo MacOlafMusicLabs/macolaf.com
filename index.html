@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MacOlaf Music Technology</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Light Mode Default */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      padding: 1.5rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 520px;
+      width: 100%;
+    }
+
+    .brand-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-subtitle {
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-top: 1.5rem;
+    }
+
+    .logo {
+      max-width: 280px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 1.5rem auto;
+    }
+
+    /* Dark Mode Adjustment */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand-title">MacOlaf</h1>
+    
+    <!-- Automatic Dark/Light Mode Logo Switching -->
+    <picture>
+      <!-- Served in Dark Mode -->
+      <source srcset="logo-light.png" media="(prefers-color-scheme: dark)">
+      
+      <!-- Fallback / Light Mode -->
+      <img src="logo-dark.png" alt="MacOlaf Music Technology Logo" class="logo">
+    </picture>
+
+    <p class="brand-subtitle">Music Technology</p>
+  </div>
+</body>
+</html>
