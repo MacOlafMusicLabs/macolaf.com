@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MacOlaf Music Technology</title>
+  <title>MacOlaf Music Labs</title>
   <style>
     * {
       margin: 0;
@@ -78,32 +78,3 @@
 
     /* Dark Mode: Pure White Text on Pure Black Background */
     @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #000000;
-        color: #ffffff;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1 class="brand-title">MacOlaf</h1>
-    
-    <!-- Automatic Dark/Light Mode Logo Switching -->
-    <picture>
-      <!-- Served in Dark Mode (Pure Black Background) -->
-      <source srcset="logo-light.png" media="(prefers-color-scheme: dark)">
-      
-      <!-- Fallback / Light Mode (Pure White Background) -->
-      <img src="logo-dark.png" alt="MacOlaf Music Technology Logo" class="logo">
-    </picture>
-
-    <p class="brand-subtitle">Music Technology</p>
-
-    <!-- Secondary Action Link -->
-    <a href="https://shop.macolaf.com" class="shop-link" target="_blank" rel="noopener">
-      Shop Merch &rarr;
-    </a>
-  </div>
-</body>
-</html>
